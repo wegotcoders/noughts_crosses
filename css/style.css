@@ -1,4 +1,44 @@
 body {
-  background: blue;
-  color: white;
+  background: white;
+  background-attachment: fixed;
+  background-image: url(https://pixabay.com/static/uploads/photo/2014/11/20/10/25/notepad-538870_960_720.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+}
+h1{
+  font: 400 40px/1.5 'Pacifico', Helvetica, sans-serif;
+  padding-left: 500px;
+}
+.board {
+  padding-left: 38%;
+}
+
+.cell {
+  display: inline-block;
+  height: 100px;
+  margin-right: -4px;
+  padding: 0;
+  text-align: center;
+  width: 100px;
+}
+
+p{
+  font-style: Helvetica, sans-serif;
+  font-size: 50px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-132%);
+}
+
+#row0, #row1, #row2{
+    width: 312px;
+}
+
+#a1, #a2, #b1, #b2, #c1, #c2 {
+  border-left: 2px solid black;
+}
+
+#a0, #a1, #a2, #b0, #b1, #b2 {
+  border-bottom: 2px solid black;
 }
