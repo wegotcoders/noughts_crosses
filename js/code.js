@@ -8,16 +8,20 @@ recognition.onresult = function (event) {
   bubble.innerHTML = "";
   for(var i = 0; i < event.results.length; i++) {
     for(var j = 0; j < event.results[i].length; j++) {
-      bubble.innerHTML +=  event.results[i][j].transcript;
+    	var spokenWords = event.results[i][j].transcript;
+      bubble.innerHTML += spokenWords
     }
   }
-  log(event);
+	var eachWord = bubble.innerHTML.split(" ");
+	var lastWord = eachWord[eachWord.length - 1];
+	markBoard(lastWord);
+  // log(event);
 }
 function log(event) {
   // Display useful information in the console
   console.log(event)
 }
-
+recognition.start()
 var board = [
   ['.', '.', '.'],
   ['.', '.', '.'],
@@ -36,6 +40,7 @@ for (move=0; move<10; move++){
 	else {player = "O"}
 
 	function markBoard(input) {
+		console.log(input);
 		if (input=="A1") {
 			board[0][0]=player;
 			console.log(board);
@@ -89,6 +94,6 @@ for (move=0; move<10; move++){
 
 
 
-markBoard("A2");
-markBoard("A1");
-markBoard("A3");
+// markBoard("A2");
+// markBoard("A1");
+// markBoard("A3");
