@@ -1,3 +1,19 @@
+// Recognise the user's voice
+var recognition = new webkitSpeechRecognition();
+recognition.continuous = true;
+recognition.interimResults = true;
+recognition.onresult = function (event) {
+  // Run this code everytime some speech is recognised
+  var bubble = document.getElementById("speech");
+  bubble.innerHTML = "";
+  for(var i = 0; i < event.results.length; i++) {
+    for(var j = 0; j < event.results[i].length; j++) {
+      bubble.innerHTML +=  event.results[i][j].transcript;
+    }
+  }
+  log(event);
+}
+
 var board = [
   ['.', '.', '.'],
   ['.', '.', '.'],
