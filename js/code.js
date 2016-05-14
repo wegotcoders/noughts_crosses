@@ -13,6 +13,10 @@ recognition.onresult = function (event) {
   }
   log(event);
 }
+function log(event) {
+  // Display useful information in the console
+  console.log(event)
+}
 
 var board = [
   ['.', '.', '.'],
