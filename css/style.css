@@ -35,10 +35,10 @@ p{
     width: 312px;
 }
 
-#a1, #a2, #b1, #b2, #c1, #c2 {
+#A2, #A3, #B2, #B3, #C2, #C3 {
   border-left: 2px solid black;
 }
 
-#a0, #a1, #a2, #b0, #b1, #b2 {
+#A1, #A2, #A3, #B1, #B2, #B3 {
   border-bottom: 2px solid black;
 }
