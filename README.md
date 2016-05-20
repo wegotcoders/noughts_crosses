@@ -11,3 +11,5 @@ few short hours, the team of 6 ladies put together a noughts and crosses game,
 using voice activation as the trigger.
 
 [Give it a try! Try saying "A1" !](http://wegotcoders.github.io/noughts_crosses)
+
+For more info on our courses, [visit wegotcoders.com](http://wegotcoders.com)
